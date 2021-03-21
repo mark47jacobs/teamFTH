@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* padding: 0 5vw 0 5vw; */
+    box-sizing: border-box;
+}
 body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -6,5 +13,5 @@ body {
     align-items: center;
     justify-content: center;
     perspective: 1000px;
-    background-image: radial-gradient(circle, #f34fa1de, #ef52b3d8, #e757c5cb, #db5ed9d0, #ca67ebc9);
+    /* background-image: radial-gradient(circle, #f34fa1de, #ef52b3d8, #e757c5cb, #db5ed9d0, #ca67ebc9); */
 }
