@@ -21,9 +21,8 @@
 
         </figure>
         <nav>
-            <button class="nav prev" (click)="collapse.toggle()" (click)="decreaseBio()"><b>
-                    < </b></button>
-            <button class="nav next" (click)="collapse.toggle()" (click)="increaseBio()"><b>></b></button>
+            <button class="nav prev" (click)="collapse.toggle()" (click)="decreaseBio()">Prev</button>
+            <button class="nav next" (click)="collapse.toggle()" (click)="increaseBio()">Next</button>
         </nav>
     </div>
     <div class="outer" #collapse="ngbCollapse" [(ngbCollapse)]="!isCollapsed">
@@ -173,5 +172,9 @@
                 </ng-template>
             </ngb-panel>
         </ngb-accordion>
+    </div>
+    <div
+        style="display:flex; flex-direction:row;align-items: center; border-radius: 10px;margin:auto; width:40%; border : 4px solid white; margin-bottom:5rem;">
+        <h2 class="title-acc" style="font-size:2rem!important">Let us take you to our quiz page</h2>
     </div>
 </div>
