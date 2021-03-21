@@ -1,18 +1,37 @@
 <div class="carousel" data-gap="80">
     <figure>
-        <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="">
-        <img src="https://source.unsplash.com/EbuaKnSm8Zw/800x533" alt="">
-        <img src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="">
-        <img src="https://source.unsplash.com/nvzvOPQW0gc/800x533" alt="">
-        <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="">
-        <img src="https://source.unsplash.com/1FWICvPQdkY/800x533" alt="">
-        <img src="https://source.unsplash.com/bjhrzvzZeq4/800x533" alt="">
-        <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="">
+        <img class="special" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="">
+        <img class="special" src="https://source.unsplash.com/EbuaKnSm8Zw/800x533" alt="">
+        <img class="special" src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="">
+        <img class="special" src="https://source.unsplash.com/nvzvOPQW0gc/800x533" alt="">
+        <img class="special" src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="">
+        <img class="special" src="https://source.unsplash.com/1FWICvPQdkY/800x533" alt="">
+        <img class="special" src="https://source.unsplash.com/bjhrzvzZeq4/800x533" alt="">
+        <img class="special" src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="">
     </figure>
     <nav>
         <button class="nav prev">Prev</button>
         <button class="nav next">Next</button>
     </nav>
+</div>
+<div class="outer" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+    <div class="container">
+        <div class="card">
+            <div class="info">
+                <h1 class="title">
+                    Quotes By Women:
+                </h1>
+                <h3>
+                    <div class="row">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum facilis maxime,
+                        minus aspernatur odit suscipit dolore vero similique, tenetur ex blanditiis earum aliquam
+                        laudantium atque qui labore velit eum dolorum?
+                    </div>
+                </h3>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="outer">
     <div class="container container0">

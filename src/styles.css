@@ -6,7 +6,5 @@ body {
     align-items: center;
     justify-content: center;
     perspective: 1000px;
-    background: linear-gradient(to right,
-            rgba(245, 69, 66, 0.575),
-            rgba(8, 82, 156, 0.452))!important;
+    background-image: radial-gradient(circle, #f34fa1de, #ef52b3d8, #e757c5cb, #db5ed9d0, #ca67ebc9);
 }

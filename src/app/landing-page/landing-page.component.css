@@ -20,10 +20,14 @@
     transform-style: preserve-3d;
     transition: transform 0.5s;
 }
+.special{
+    border-radius:25px;
+}
 .carousel figure img {
     width: 100%;
     box-sizing: border-box;
     padding: 0 0px;
+    border-radius: 10px;
 }
 .carousel figure img:not(:first-of-type) {
     position: absolute;
