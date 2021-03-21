@@ -12,7 +12,7 @@
 }
 .outer-outer
 {
-    background-image: radial-gradient(circle, #f34fa1de, #ef52b3d8, #e757c5cb, #db5ed9d0, #ca67ebc9);
+    background-image: radial-gradient(circle, #f34fa193, #ef52b38e, #e757c581, #db5ed973, #ca67eb9d);
     padding : 0 1vw 0 1vw;
 }.carousel figure {
     margin: 0;
@@ -58,11 +58,11 @@
 }
 .card {
     transform-style: preserve-3d;
-    min-height: 12rem;
-    height:70vh;
+    min-height: 2rem;
+    height:55vh;
     width: 80vw;
     border-radius: 40px;
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 .gradient_class {
@@ -72,7 +72,7 @@
 }
 
 .info h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     transition: all 0.75s ease-out;
 }
 
@@ -216,7 +216,6 @@ h1 {
 }
 .title-acc{
     font-size: calc(20px + 9vh);
-  line-height: calc(20px + 20vh);
 /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
     0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff; */
@@ -271,4 +270,146 @@ h1 {
 /*   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000; */
     color: #dde0e6;
   }
+}
+
+.jheading-primary--main {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
+    
+.jheading-primary--sub {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .4rem;
+}
+
+.jpost{
+    width: 90%;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.jcontent{
+    display: flex;
+    flex-direction: column;
+}
+
+.jtitle{
+    transition: all .3s ease;
+}
+
+.jtitle:hover{
+    transform: scaleY(1.1);
+}
+
+.jpost .jcontent{
+    justify-content: center;
+    width: 50%;
+}
+
+.jpost .jinfo{
+    text-align: justify;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+}
+
+.jimage-box{
+    height: 400px;
+    width: 600px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin-left: 3rem;
+    overflow: hidden;
+}
+
+
+.jmain{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+.jcards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: auto;
+}
+
+.jcards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .jcards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .jcards_item {
+    width: 33.3333%;
+  }
+}
+
+.jcard {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.jcard_content {
+  padding: 1rem;
+}
+
+.jcard_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.jcard_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.jmade_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
 }

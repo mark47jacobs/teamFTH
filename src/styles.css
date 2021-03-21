@@ -5,6 +5,7 @@
     padding: 0;
     /* padding: 0 5vw 0 5vw; */
     box-sizing: border-box;
+    
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -13,5 +14,19 @@ body {
     align-items: center;
     justify-content: center;
     perspective: 1000px;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
+    background-image: url(https://gdj-inr5u0ip5pewom.stackpathdns.com/wp-content/uploads/2012/07/background-pattern-18.jpg);
+    object-fit:cover;
     /* background-image: radial-gradient(circle, #f34fa1de, #ef52b3d8, #e757c5cb, #db5ed9d0, #ca67ebc9); */
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

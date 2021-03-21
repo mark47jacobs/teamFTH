@@ -21,8 +21,9 @@
 
         </figure>
         <nav>
-            <button class="nav prev" (click)="collapse.toggle()" (click)="decreaseBio()">Prev</button>
-            <button class="nav next" (click)="collapse.toggle()" (click)="increaseBio()">Next</button>
+            <button class="nav prev" (click)="collapse.toggle()" (click)="decreaseBio()"><b>
+                    < </b></button>
+            <button class="nav next" (click)="collapse.toggle()" (click)="increaseBio()"><b>></b></button>
         </nav>
     </div>
     <div class="outer" #collapse="ngbCollapse" [(ngbCollapse)]="!isCollapsed">
@@ -48,9 +49,117 @@
                     <h2 class="title-acc" style="font-size:2rem!important">Women in NEWS</h2>
                 </ng-template>
                 <ng-template ngbPanelContent>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut saepe laudantium optio
-                    excepturi libero? Natus, nostrum deserunt quis excepturi necessitatibus perferendis quia
-                    laudantium, provident praesentium similique hic veniam maxime.
+                    <div class="jnews">
+                        <div class="jmain">
+                            <ul class="jcards">
+                                <li class="jcards_item">
+                                    <div class="jcard">
+                                        <div class="jcard_image"><img
+                                                src="https://www.shethepeople.tv/wp-content/uploads/2016/07/Gita-Gopinath1.jpg">
+                                        </div>
+                                        <div class="jcard_content">
+                                            <h2 class="jcard_title">The Fiscal Scholar - Gita Gopinath</h2>
+                                            <p class="jcard_text">Gita Gopinath is a Harvard economist who became the
+                                                first Indian woman to assume the position of Chief Economist at IMF -
+                                                the International Monetary Fund. She is originally from Kerala and is
+                                                the daughter of a farmer-entrepreneur! She is the John Zwaanstra
+                                                Professor of International Studies and Economics at Harvard University.
+                                                Ms. Gopinath is also the co-director of the International Finance and
+                                                Macroeconomics program at the National Bureau of Economic Research.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jcards_item">
+                                    <div class="jcard">
+                                        <div class="jcard_image"><img
+                                                src="https://i.ndtvimg.com/i/2016-12/mc-mary-kom-pti_806x605_61481278339.jpg">
+                                        </div>
+                                        <div class="jcard_content">
+                                            <h2 class="jcard_title">Ms. Knock-out - Mary Kom</h2>
+                                            <p class="jcard_text">Chungneijang Mary Kom Hmangte is an Indian Olympic
+                                                boxer from Manipur. She is the only woman to achieve the coveted No. 1
+                                                position in the International Boxing Association (AIBA) after becoming
+                                                the World Amateur Boxing champion for a six times record. Kom is also
+                                                the only woman boxer to have won a medal in all seven world
+                                                championships, making it a world record. Known as ‘Magnificent Mary,’
+                                                she has become India’s favourite sportsperson, shining at several
+                                                International platforms.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jcards_item">
+                                    <div class="jcard">
+                                        <div class="jcard_image"><img
+                                                src="https://sm.mashable.com/t/mashable_in/photo/default/hima-das-proves-yet-again-that-she-is-the-golden-girl-of-ind_zetk.960.jpg">
+                                        </div>
+                                        <div class="jcard_content">
+                                            <h2 class="jcard_title">Dhing Express - Hima Das</h2>
+                                            <p class="jcard_text">Hima Das is the first Indian athlete (sprint runner)
+                                                to win gold at the IAAF World Under-20 Athletics Championship in 2018,
+                                                held at Tampere, Finland. Later, she went on to win gold and silver
+                                                medals at the Asian Games held in Jakarta. She currently holds the
+                                                Indian national record in 400 meters, with a timing of 50.79s. The
+                                                daughter of a humble rice farmer near the town of Dhing in Assam, Hima
+                                                Das became a national phenomenon at the young age of 18. And in 2019,
+                                                she won 5 gold medals in 20 days!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jcards_item">
+                                    <div class="jcard">
+                                        <div class="jcard_image"><img
+                                                src="https://www.merisaheli.com/wp-content/uploads/2018/02/4AVANI_b_220218.jpg">
+                                        </div>
+                                        <div class="jcard_content">
+                                            <h2 class="jcard_title">Sky Warrior - Avani Chaturvedi</h2>
+                                            <p class="jcard_text">Flight Lieutenant Avani Chaturvedi, a young Indian Air
+                                                Force officer, became the first Indian woman fighter pilot to fly the
+                                                ‘MiG-21 Bison’ solo. The MiG-21 Bison is known for its highest take-off
+                                                and landing speed in the world at 340 kmph. Avani inspired many young
+                                                women by making her mark in a field dominated by men.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jcards_item">
+                                    <div class="jcard">
+                                        <div class="jcard_image"><img
+                                                src="https://images.yourstory.com/cs/4/211ccaf00e6d11e997fe8f165dce9bb1/Image9tcb-1602834817394.jpg?fm=png&auto=format">
+                                        </div>
+                                        <div class="jcard_content">
+                                            <h2 class="jcard_title">Biotech Pioneer - Kiran Mazumdar-Shaw</h2>
+                                            <p class="jcard_text">Kiran Mazumdar-Shaw started her own venture- Biocon in
+                                                1978. Today she is ranked 60th on the Forbes’ list of most powerful
+                                                women in the world and is the richest self-made woman billionaire of
+                                                India. She is currently the Chairperson and Managing Director of Biocon
+                                                Limited (one of the largest biotechnology/biopharmaceutical companies in
+                                                India) and the Chairperson of the Indian Institute of Management,
+                                                Bangalore.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jcards_item">
+                                    <div class="jcard">
+                                        <div class="jcard_image"><img
+                                                src="https://images.yourstory.com/cs/wordpress/2016/10/Indra-Nooyi-Picture-courtesy-Pinterest.jpg">
+                                        </div>
+                                        <div class="jcard_content">
+                                            <h2 class="jcard_title">Pepsi Queen - Indra Nooyi</h2>
+                                            <p class="jcard_text">Indra Nooyi is a business executive and former CEO of
+                                                PepsiCo. She has consistently been ranked among the world’s 100 most
+                                                powerful women. She also featured on the Fortune List in 2015 as the 2nd
+                                                most powerful woman in the world. In 2018, Nooyi was named as one of the
+                                                ‘Best CEOs in the World’ and has also been awarded the Padma Bhushan and
+                                                the CNN-IBM Indian of the year- Global Indian award 2019. She serves as
+                                                a board member of Amazon currently and is the 2nd woman to be part of
+                                                the board at Amazon. </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
                 </ng-template>
             </ngb-panel>
             <ngb-panel id="config-panel-two">
