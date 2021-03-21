@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
 
   constructor() { }
-
+  CurQuote: string;
   ngOnInit(): void {
     this.animate();
   }

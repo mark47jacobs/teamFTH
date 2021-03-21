@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background: linear-gradient(to right,
+            rgba(245, 69, 66, 0.575),
+            rgba(8, 82, 156, 0.452))!important;
+}
