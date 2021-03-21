@@ -9,7 +9,22 @@ export class LandingPageComponent implements OnInit {
 
   constructor() { }
   CurQuote: string;
-  femaleicons = { "src": "../../assets", "name": "Madonna", "bio": "lorem20" };
+  femaleicons = [{
+    "src": "../../assets/madonna.jpg",
+    "name": "Madonna",
+    "bio": "A pop icon for over 30 years, Madonna is known for pushing the boundaries of what was acceptable for women in the entertainment industry. The third of six children, she actually dreamed of becoming a ballet dancer. Before her first top-10 hit in 1984, she moved to New York with just $35 in her pocket. Determined to make it, she worked a few lousy jobs along the way – including one at Dunkin’ Donuts. At 60, she continues to make popular music and redefine gender roles into the new Millenium.\“I’m tough, I’m ambitious, and I know exactly what I want. If that makes me a bitch, okay.\” "
+  },
+  {
+    "src": "../../assets/hattieMcDaniel.jpg",
+    "name": "Hattie McDaniel",
+    "bio": "In 1940 Hattie McDaniel became the first African American woman to win an Academy Award. Unfortunately, the industry was shrouded with controversy because of the racism of the time. In fact, not only did she require an escort to the awards and the hotel at which the event was held, Hattie and her escort were obligated to sit at segregated tables. She went on to become an inspiration for African American entertainers and her legacy continues to be celebrated almost 80 years later.\“Putting a little time aside for clean fun and good humor is very necessary to relieve the tension of our time.\”"
+  },
+  {
+    "src": "../../assets/jkrowling.jpg",
+    "name": "J K Rowling",
+    "bio": "The author of the world-famous Harry Potter novel series, Joanne Rowling built a near billion dollar empire of the success of her characters. But that wasn’t always her story: she started out broke, and began writing out the ideas for her bestselling series on the back of napkin while on a train to London. Granted an OBE (Order of the British Empire) by the Queen in 2001, Rowling now lives quietly with her family and continues to write. She dabbles in philanthropy while continuing to solidify her legacy as one of the greatest female novelists of all time.\“Happiness can be found, even in the darkest times, if one only remembers to turn on the light.\”"
+  },
+  ];
   public isCollapsed = false;
   ngOnInit(): void {
     var carousels = document.querySelectorAll('.carousel');
