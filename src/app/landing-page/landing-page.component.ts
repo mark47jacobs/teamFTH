@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
 
   constructor() { }
-  CurQuote: string;
+  index = 0;
   femaleicons = [{
     "src": "../../assets/madonna.jpg",
     "name": "Madonna",
@@ -24,6 +24,31 @@ export class LandingPageComponent implements OnInit {
     "name": "J K Rowling",
     "bio": "The author of the world-famous Harry Potter novel series, Joanne Rowling built a near billion dollar empire of the success of her characters. But that wasn’t always her story: she started out broke, and began writing out the ideas for her bestselling series on the back of napkin while on a train to London. Granted an OBE (Order of the British Empire) by the Queen in 2001, Rowling now lives quietly with her family and continues to write. She dabbles in philanthropy while continuing to solidify her legacy as one of the greatest female novelists of all time.\“Happiness can be found, even in the darkest times, if one only remembers to turn on the light.\”"
   },
+  {
+    "src": "../../assets/mayaAngelou.jpg",
+    "name": "Maya Angelou",
+    "bio": "A civil rights activist, poet and singer, Maya Angelou is best known for her autobiography I Know Why the Caged Bird Sings. Her career in the creative arts spans over 50 years, and she has received more than 50 honorary degrees. In her early life she was a sex worker, and early in her life, she received sexual abuse from her mother’s boyfriend. After revealing the incident to her family, the man was murdered, and Angelou became a mute for 5 years. It is believed it was these 5 years that crafted her extraordinary mind, memory and creativity. Her story is an inspiration to young women everywhere who suffer the brutality of assault, and who are able to build remarkable lives in spite of it.\“I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.\”"
+  },
+  {
+    "src": "../../assets/malalaYousafzai.jpg",
+    "name": "Malala Yousafzai",
+    "bio": "At 12 years old she was a blogger for the BBC, at 15 she survived an assassination by the Taliban, and at 17 she became the youngest Nobel Prize laureate of all time. Malala Yousafzai is a human rights advocate and a champion for education in her native Pakistan. She has since become a well known and popular philanthropist and an example of peace and empowerment for young people \“I think of it often and imagine the scene clearly. Even if they come to kill me, I will tell them what they are trying to do is wrong, that education is our basic right.\”"
+  },
+  {
+    "src": "../../assets/anneFrank.jpg",
+    "name": "Anne Frank",
+    "bio": "Anne Frank was a German-born Jew who became one of the most well-known victims of the Holocaust after a journal she kept while in hiding became a huge success after being posthumously published as The Diary of a Young Girl. The diary gives a raw and real look into the life of Jews in Nazi Germany, but what is most shocking is her strength of character and unbelievable maturity for a young girl at the time of writing (just 13 when she started, and 15 at the end of her short life.) A consistent theme throughout her entries is the importance for woman to have a voice.\“In spite of everything, I still believe that people are really good at heart.\”"
+  },
+  {
+    "src": "../../assets/serenaWilliams.png",
+    "name": "Serena Williams",
+    "bio": "Unanimously hailed as the greatest female Tennis player, and maybe athlete, of all time, Serena Williams has become a strong representative for women both on and off the field. She and her sister Venus have dominated international tennis for over 15 years, despite having to deal with a series of media controversies, serious injuries, racism and sexism. She has built a brand and a legacy, and she truly embodies what it means to be a strong and empowered woman.\“I’ve grown most not from victories, but setbacks. If winning is God’s reward, then losing is how he teaches us.\”"
+  },
+  {
+    "src": "../../assets/virginiaWoolf.jpg",
+    "name": "Virginia Woolf",
+    "bio": "Considered one of the most important authors of the 20th century, Virginia Woolf was an outspoken advocate for women rights. She was strongly anti-colonialist, and the themes of her novels sought to go against the misogyny of the time. At a time where speaking out as a feminist in a public position could be dangerous, she was an inspiration to creative women everywhere.\“If you do not tell the truth about yourself you cannot tell it about other people.\”"
+  },
   ];
   public isCollapsed = false;
   ngOnInit(): void {
@@ -32,6 +57,21 @@ export class LandingPageComponent implements OnInit {
       this.carousel(carousels[i]);
     }
     this.addFunnyAnimation(0);
+  }
+  changeBio(index) {
+    this.index = index;
+  }
+  decreaseBio() {
+    if (this.index == 0)
+      this.index = 7;
+    else
+      this.index--;
+  }
+  increaseBio() {
+    if (this.index == 7)
+      this.index = 0;
+    else
+      this.index++;
   }
   //Movement Animation to happen
   addFunnyAnimation(index) {
@@ -44,8 +84,8 @@ export class LandingPageComponent implements OnInit {
 
     //Moving Animation Event
     container.addEventListener("mousemove", (e: MouseEvent) => {
-      let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-      let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+      let xAxis = (window.innerWidth / 2 - e.pageX) / 50;
+      let yAxis = (window.innerHeight / 2 - e.pageY) / 50;
       card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     });
     //Animate In
@@ -54,9 +94,9 @@ export class LandingPageComponent implements OnInit {
       card.classList.add("gradient_class");
       //Popout
       if (index != 3) {
-        title.style.transform = "translateZ(190px)";
-        description.style.transform = "translateZ(165px)";
-        purchase.style.transform = "translateZ(45px)";
+        title.style.transform = "translateZ(100px)";
+        description.style.transform = "translateZ(75px)";
+        purchase.style.transform = "translateZ(4px)";
       }
     });
     //Animate Out

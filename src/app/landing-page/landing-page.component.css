@@ -16,7 +16,7 @@
 }
 .carousel figure {
     margin: 0;
-    width: 40%;
+    width: 70%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
 }
@@ -26,7 +26,7 @@
 .carousel figure img {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 0px;
+    padding: 0px 0px;
     border-radius: 10px;
 }
 .carousel figure img:not(:first-of-type) {

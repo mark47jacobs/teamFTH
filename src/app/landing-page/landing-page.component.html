@@ -1,39 +1,45 @@
 <div class="carousel" data-gap="80">
     <figure>
-        <img class="special" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
-            aria-controls="collapseExample" src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="">
-        <img class="special" src="https://source.unsplash.com/EbuaKnSm8Zw/800x533" alt="">
-        <img class="special" src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="">
-        <img class="special" src="https://source.unsplash.com/nvzvOPQW0gc/800x533" alt="">
-        <img class="special" src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="">
-        <img class="special" src="https://source.unsplash.com/1FWICvPQdkY/800x533" alt="">
-        <img class="special" src="https://source.unsplash.com/bjhrzvzZeq4/800x533" alt="">
-        <img class="special" src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="">
+        <img class="special" (click)="collapse.toggle()" (click)="changeBio(0)" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" [src]="femaleicons[0].src" alt="">
+        <img class="special" (click)="collapse.toggle()" (click)="changeBio(1)" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" [src]="femaleicons[1].src" alt="">
+        <img class="special" (click)="collapse.toggle()" (click)="changeBio(2)" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" [src]="femaleicons[2].src" alt="">
+        <img class="special" (click)="collapse.toggle()" (click)="changeBio(3)" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" [src]="femaleicons[3].src" alt="">
+        <img class="special" (click)="collapse.toggle()" (click)="changeBio(4)" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" [src]="femaleicons[4].src" alt="">
+        <img class="special" (click)="collapse.toggle()" (click)="changeBio(5)" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" [src]="femaleicons[5].src" alt="">
+        <img class="special" (click)="collapse.toggle()" (click)="changeBio(6)" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" [src]="femaleicons[6].src" alt="">
+        <img class="special" (click)="collapse.toggle()" (click)="changeBio(7)" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample" [src]="femaleicons[7].src" alt="">
+
     </figure>
     <nav>
-        <button class="nav prev">Prev</button>
-        <button class="nav next">Next</button>
+        <button class="nav prev" (click)="collapse.toggle()" (click)="decreaseBio()">Prev</button>
+        <button class="nav next" (click)="collapse.toggle()" (click)="increaseBio()">Next</button>
     </nav>
 </div>
-<div class="outer" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-    <div class="container">
-        <div class="card">
-            <div class="info">
-                <h1 class="title">
-                    Quotes By Women:
+<div class="outer" #collapse="ngbCollapse" [(ngbCollapse)]="!isCollapsed">
+    <div class="container container0">
+        <div class="card card0">
+            <div class="info info0">
+                <h1 class="title title0">
+                    Bio of {{femaleicons[index].name}}
                 </h1>
                 <h3>
                     <div class="row">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum facilis maxime,
-                        minus aspernatur odit suscipit dolore vero similique, tenetur ex blanditiis earum aliquam
-                        laudantium atque qui labore velit eum dolorum?
+                        {{femaleicons[index].bio}}
                     </div>
                 </h3>
             </div>
         </div>
     </div>
 </div>
-<div class="outer">
+<!-- <div class="outer">
     <div class="container container0">
         <div class="card card0">
             <div class="info info0">
@@ -50,4 +56,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
