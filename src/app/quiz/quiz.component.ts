@@ -104,7 +104,7 @@ export class QuizComponent implements OnInit {
 
     // getting this.questions and options from array
     function showQuetions(index) {
-      const que_text = document.querySelector(".que_text");
+      const que_text: HTMLElement = document.querySelector(".que_text");
 
       //creating a new span and div tag for question and option and passing the value using array index
       let que_tag = '<span>' + this.questions[index].numb + ". " + this.questions[index].question + '</span>';
