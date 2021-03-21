@@ -13,8 +13,9 @@
 .outer-outer
 {
     background-image: radial-gradient(circle, #f34fa193, #ef52b38e, #e757c581, #db5ed973, #ca67eb9d);
-    padding : 0 1vw 0 1vw;
-}.carousel figure {
+    padding : 0 1vw 7rem 1vw;
+}
+.carousel figure {
     margin: 0;
     width: 70%;
     transform-style: preserve-3d;
